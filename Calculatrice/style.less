@@ -1,0 +1,110 @@
+body{
+    margin: 0;
+    padding: 0;
+    height: 969px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(2,0,36);
+    background: linear-gradient(0deg, rgba(2,0,36,1) 0%, rgba(68,172,176,1) 41%, rgba(168,232,245,1) 100%);
+    header{
+        h1{
+            text-transform: uppercase;
+        }
+    }
+    section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 15px 0;
+        padding: 15px 0;
+        width: 400px;
+        background-color: rgb(254, 43, 75);
+        border: outset 8px rgb(245, 126, 126);
+        border-radius: 10px;
+        h2{
+            margin-left: 5%;
+            align-self: start;
+            text-align: right;
+            text-shadow: 2px;
+        }
+        div.cadran{
+            width: 70%;
+            border: inset 5px rgb(255, 137, 137);
+            border-radius: 5px;
+            background-color: rgb(251, 253, 228);
+            p{
+                text-align: right;
+                margin-right: 5%;
+                height: 20px;
+            }
+        }
+        div.pad{
+            width: 70%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-top: 5%;
+            border: groove 5px rgb(118, 18, 21);
+            border-radius: 5px;
+            div.rowPad{
+                display: flex;
+                flex-direction: row;
+                gap: 2%;
+                margin: 10px 0;
+                
+                div.btnPad{
+                    height: 60px;
+                    width: 60px;
+                    button{
+                        width: 100%;
+                        height: 100%;
+                        border-radius: 10px;
+                        box-shadow: -2px -2px 1px rgb(54, 54, 54);
+                        font-size: larger;
+                    }
+                }
+                div.btnReset{
+                    height: 40px;
+                    width: 100%;
+                    button{
+                        width: 100%;
+                        height: 80%;
+                        border-radius: 10px;
+                        box-shadow: -2px -2px 1px rgb(54, 54, 54);
+                        font-size: larger;
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+        div.memory{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2%;
+            width: 85%;
+            height: 150px;
+            background-color: rgb(31, 31, 29);
+            border: inset 5px rgb(255, 137, 137);
+            border-radius: 5px;
+            h3{
+                height: 0%;
+                font-size: small;
+                text-transform: uppercase;
+                text-align: center;
+                font-family: monospace;
+                color: rgb(23, 247, 23);
+            }
+            p{
+                width: 95%;
+                height: 100%;
+                border: dashed 0.5px rgb(23, 247, 23);
+                overflow: auto;
+                color: rgb(23, 247, 23);
+            }
+        }
+    }
+}

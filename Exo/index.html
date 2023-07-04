@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>bonjour</h1>
+     <!-- //////////////////////////////////////////////////////////   -->
+
+        Nom: <input name="nom" onclick="colorNom()" style="width:auto;" id="inputNom" placeholder="Nom" type="text"> Prénom: <input name="prenom" onclick="colorPrenom()" id="inputPrenom" placeholder="Prénom" style="width:auto;" type="text">
+    <br>
+     <!-- //////////////////////////////////////////////////////////   -->
+    <br>
+    <button onclick="document.getElementById('idIncre').style.display='block'" style="width:auto;"> Incrémentation !</button>
+        
+    <div id="idIncre" class="modal">
+        <div class="modal-content animate">
+          <div class="container">
+              <p id="pIncre">Vous n'avez pas encore cliquer ...</p>
+              <button type="button" id="buttonIncre" onclick="clickIncre()">Table !</button>
+          </div>
+        </div>
+    </div>
+<br>
+
+
+     <!-- //////////////////////////////////////////////////////////   -->
+        
+        
+        <button onclick="document.getElementById('idTable').style.display='block'" style="width:auto;"> Table 3 !</button>
+        
+        <div id="idTable" class="modal">
+            <div class="modal-content animate">
+              <div class="container">
+                  <p id="pTable">Vous n'avez pas encore cliquer ...</p>
+                  <button type="button" id="buttonTable" onclick="clickTable()">Table !</button>
+              </div>
+            </div>
+        </div>
+    <br>
+
+    <br>
+     <!-- //////////////////////////////////////////////////////////   -->
+        <button onclick="document.getElementById('idPileOuFace').style.display='block'" style="width:auto;"> Pile ou Face !</button>
+        
+        <div id="idPileOuFace" class="modal">
+            <div class="modal-content animate">
+              <div class="container">
+                  <p id="pPile">Vous n'avez pas encore cliquer ...</p>
+                  <button type="button" id="buttonPile" onclick="Pile()">Pile ou Face !</button>
+              </div>
+            </div>
+        </div>
+    <br>
+
+    <br>
+  <!-- //////////////////////////////////////////////////////////   -->
+
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login ex</button>
+
+<div id="id01" class="modal">
+  
+  <div class="modal-content animate" >
+    <div class="imgcontainer">
+      <img src="img_avatar2.png" alt="Avatar" class="avatar">
+    </div>
+    <div class="container">
+        <label><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname">
+
+        <label><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" id="psw" name="psw" required>
+            
+        <button onclick="verifyPWD()" id="buttonLogin" type="button">Login</button>
+        <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </div>
+</div>
+  <!-- //////////////////////////////////////////////////////////   -->
+    <script src="scripts.js"></script>
+</body>
+</html>

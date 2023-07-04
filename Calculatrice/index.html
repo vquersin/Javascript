@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1> Calculatrice </h1>
+    </header>
+    <section class="boitier">
+        <h2>Calk-ULTRON !</h2>
+        <div class="cadran">
+            <p class="txtcadran" id="cadran" maxlength="20">...</p>
+        </div>
+        <div class="pad">
+            <div class="rowPad">
+                <div class="btnPad">
+                    <button value="1" id="btn1" onclick="javascript:calc(btn1,1)">1</button>
+                </div>
+                <div class="btnPad">
+                    <button value="2" id="btn2" onclick="javascript:calc(btn2,2)">2</button>
+                </div>
+                <div class="btnPad">
+                    <button value="3" id="btn3" onclick="javascript:calc(btn3,3)">3</button>
+                </div>
+                <div class="btnPad">
+                    <button value="&divide;" id="btnDivide" onclick="javascript:calc(btnDivide,'/')">/</button>
+                </div>
+            </div>
+            <div class="rowPad">
+                <div class="btnPad">
+                    <button value="4" id="btn4" onclick="javascript:calc(btn4,4)">4</button>
+                </div>
+                <div class="btnPad">
+                    <button value="5" id="btn5" onclick="javascript:calc(btn5,5)">5</button>
+                </div>
+                <div class="btnPad">
+                    <button value="6" id="btn6" onclick="javascript:calc(btn6,6)">6</button>
+                </div>
+                <div class="btnPad">
+                    <button value="x" id="btnMultiply" onclick="javascript:calc(btnMultiply,'x')">x</button>
+                </div>
+            </div>
+            <div class="rowPad">
+                <div class="btnPad">
+                    <button value="" id="btn7" onclick="javascript:calc(btn7,7)">7</button>
+                </div>
+                <div class="btnPad">
+                    <button value="" id="btn8" onclick="javascript:calc(btn8,8)">8</button>
+                </div>
+                <div class="btnPad">
+                    <button value="" id="btn9" onclick="javascript:calc(btn9,9)">9</button>
+                </div>
+                <div class="btnPad">
+                    <button value="-" id="btnSoustract" onclick="javascript:calc(btnSoustract,'-')">-</button>
+                </div>
+            </div>
+            <div class="rowPad">
+                <div class="btnPad">
+                    <button value="" id="btn0" onclick="javascript:calc(btn0,0)">0</button>
+                </div>
+                <div class="btnPad">
+                    <button value="" id="btnDot" onclick="javascript:calc(btnDot,',')">,</button>
+                </div>
+                <div class="btnPad">
+                    <button value="" id="btnEqual" onclick="javascript:calc(btnEqual,'=')">=</button>
+                </div>
+                <div class="btnPad">
+                    <button value="+" id="btnAdd" onclick="javascript:calc(btnAdd,'+')">+</button>
+                </div>
+            </div>
+            <div class="rowPad">
+                <div class="btnReset">
+                    <button value="CE" id="btnReset" onclick="javascript:calc(btnReset,'CE')">CE</button>
+                </div>
+            </div>
+        </div>
+        <div class="memory">
+            <h3>Memory:</h3>
+            <p id="memoryP"> ... </p>
+        </div>
+    </section>
+<script src="script.js"></script> 
+</body>
+</html>

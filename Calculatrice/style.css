@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 969px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #020024;
+  background: linear-gradient(0deg, #020024 0%, #44acb0 41%, #a8e8f5 100%);
+}
+body header h1 {
+  text-transform: uppercase;
+}
+body section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+  padding: 15px 0;
+  width: 400px;
+  background-color: #fe2b4b;
+  border: outset 8px #f57e7e;
+  border-radius: 10px;
+}
+body section h2 {
+  margin-left: 5%;
+  align-self: start;
+  text-align: right;
+  text-shadow: 2px;
+}
+body section div.cadran {
+  width: 70%;
+  border: inset 5px #ff8989;
+  border-radius: 5px;
+  background-color: #fbfde4;
+}
+body section div.cadran p {
+  text-align: right;
+  margin-right: 5%;
+  height: 20px;
+}
+body section div.pad {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5%;
+  border: groove 5px #761215;
+  border-radius: 5px;
+}
+body section div.pad div.rowPad {
+  display: flex;
+  flex-direction: row;
+  gap: 2%;
+  margin: 10px 0;
+}
+body section div.pad div.rowPad div.btnPad {
+  height: 60px;
+  width: 60px;
+}
+body section div.pad div.rowPad div.btnPad button {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  box-shadow: -2px -2px 1px #363636;
+  font-size: larger;
+}
+body section div.pad div.rowPad div.btnReset {
+  height: 40px;
+  width: 100%;
+}
+body section div.pad div.rowPad div.btnReset button {
+  width: 100%;
+  height: 80%;
+  border-radius: 10px;
+  box-shadow: -2px -2px 1px #363636;
+  font-size: larger;
+  text-transform: uppercase;
+}
+body section div.memory {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2%;
+  width: 85%;
+  height: 150px;
+  background-color: #1f1f1d;
+  border: inset 5px #ff8989;
+  border-radius: 5px;
+}
+body section div.memory h3 {
+  height: 0%;
+  font-size: small;
+  text-transform: uppercase;
+  text-align: center;
+  font-family: monospace;
+  color: #17f717;
+}
+body section div.memory p {
+  width: 95%;
+  height: 100%;
+  border: dashed 0.5px #17f717;
+  overflow: auto;
+  color: #17f717;
+}
