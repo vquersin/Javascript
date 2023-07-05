@@ -1,0 +1,25 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  background: #1a4530;
+  background: linear-gradient(38deg, #1a4530 0%, #378a5f 41%, #90e05d 72%, #f1e892 100%);
+}
+body svg {
+  fill: #e6fff7;
+  stroke: #f7cd5a;
+  stroke-width: 1px;
+  margin-right: 10%;
+}
+body .tooltip {
+  position: absolute;
+  width: 140px;
+  padding: 15px 10px;
+  border-radius: 4px;
+  font-family: monospace;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.5);
+  overflow: hidden;
+}
