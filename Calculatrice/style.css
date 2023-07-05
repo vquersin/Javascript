@@ -30,13 +30,20 @@ body section h2 {
   text-shadow: 2px;
 }
 body section div.cadran {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   width: 70%;
   border: inset 5px #ff8989;
   border-radius: 5px;
   background-color: #fbfde4;
 }
-body section div.cadran p {
-  text-align: right;
+body section div.cadran .cadranResult {
+  margin-right: 10%;
+  height: 20px;
+}
+body section div.cadran .cadran {
   margin-right: 5%;
   height: 20px;
 }

@@ -30,12 +30,19 @@ body{
             text-shadow: 2px;
         }
         div.cadran{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
             width: 70%;
             border: inset 5px rgb(255, 137, 137);
             border-radius: 5px;
             background-color: rgb(251, 253, 228);
-            p{
-                text-align: right;
+            .cadranResult{
+                margin-right: 10%;
+                height: 20px;
+            }
+            .cadran{
                 margin-right: 5%;
                 height: 20px;
             }
