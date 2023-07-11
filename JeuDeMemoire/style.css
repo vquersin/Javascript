@@ -1,0 +1,119 @@
+body {
+  background: #1a1e45;
+  background: radial-gradient(circle, #1a1e45 0%, #37818a 64%, #5de094 98%, #f1e892 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 80vh;
+}
+body .enTete {
+  margin-top: 10px;
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.529);
+  width: 500px;
+  border-radius: 50%;
+}
+body .board {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2%;
+  color: white;
+  font-weight: 600;
+  width: 900px;
+  height: 900px;
+  background-color: #035903;
+  border: ridge 10px rgba(255, 0, 0, 0.585);
+  border-radius: 20px;
+}
+body .board .icon {
+  rotate: -10deg;
+  margin-top: 2%;
+  border: solid 4px white;
+  border-radius: 4px;
+  width: 50px;
+  height: 80px;
+}
+body .board .icon .duplicateIcon {
+  rotate: 20deg;
+  border: solid 4px white;
+  border-radius: 4px;
+  width: 50px;
+  height: 80px;
+  margin-left: 15px;
+  background-color: #035903;
+}
+body .board .icon .duplicateIcon .duplicateDot {
+  position: relative;
+  left: 40%;
+  top: 40%;
+  background-color: white;
+  border-radius: 50%;
+  width: 20%;
+  height: 20%;
+}
+body .board .cardBoard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 40px;
+}
+body .board .cardBoard .row {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+body .board .cardBoard .row .card {
+  width: 100px;
+  height: 150px;
+  background-color: rgba(52, 224, 149, 0.405);
+  border: solid 4px white;
+  border-radius: 4px;
+  transition: transform 1s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+body .board .cardBoard .row .card .dot {
+  position: relative;
+  left: 8%;
+  top: 8%;
+  background-color: white;
+  border-radius: 50%;
+  border: groove 2px rgba(255, 0, 0, 0.585);
+  width: 80%;
+  height: 80%;
+  background-image: url('svg/question.svg');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+body .board .cardBoard .row .card .dotTurn {
+  position: relative;
+  left: 10%;
+  top: 10%;
+  background-color: white;
+  border-radius: 50%;
+  width: 80%;
+  height: 80%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+body .board .cardBoard .reset {
+  width: 100px;
+  height: 40px;
+  background-color: #035903;
+  border: solid 3px white;
+  border-radius: 5px;
+  color: white;
+  font-size: large;
+  font-weight: 600;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+}

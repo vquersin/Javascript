@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Jeu de mémoire</title>
+</head>
+<body>
+    <div class="enTete">
+        <h1>Jeu de Mémoire</h1>
+    </div>
+    <div class="board">
+        <div class="icon">
+            <div class="duplicateIcon"><div class="duplicateDot"></div></div>
+        </div>
+        <p>Tentez de gagner avec le moins d'essais possible.</p>
+        <p id="compteur" class="compteur">Nombre de coups: 0</p>
+        <div class="cardBoard">
+            <div class="row">
+                <div id="clickc1" onclick="turnCard('c1')" class="card"><img id="c1" class="dot"></div>
+                <div id="clickc2" onclick="turnCard('c2')" class="card"><img id="c2" class="dot"></div>
+                <div id="clickc3" onclick="turnCard('c3')" class="card"><img id="c3" class="dot"></div>
+                <div id="clickc4" onclick="turnCard('c4')" class="card"><img id="c4" class="dot"></div>
+            </div>
+            <div class="row">
+                <div id="clickc5" onclick="turnCard('c5')" class="card"><img id="c5" class="dot"></div>
+                <div id="clickc6" onclick="turnCard('c6')" class="card"><img id="c6" class="dot"></div>
+                <div id="clickc7" onclick="turnCard('c7')" class="card"><img id="c7" class="dot"></div>
+                <div id="clickc8" onclick="turnCard('c8')" class="card"><img id="c8" class="dot"></div>
+            </div>
+            <div class="row">
+                <div id="clickc9" onclick="turnCard('c9')" class="card"><img id="c9" class="dot"></div>
+                <div id="clickc10" onclick="turnCard('c10')" class="card"><img id="c10" class="dot"></div>
+                <div id="clickc11" onclick="turnCard('c11')" class="card"><img id="c11" class="dot"></div>
+                <div id="clickc12" onclick="turnCard('c12')" class="card"><img id="c12" class="dot"></div>
+            </div>
+            <button onclick="reset()" id="reset" class="reset">Reset</button>
+        </div>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
