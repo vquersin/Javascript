@@ -11,6 +11,9 @@ elements.forEach(function(element) {
 	document.getElementById('data-region').style.width = "450px";
 	document.getElementById('data-region').style.transition = "1s";
 	depOver(this);
+	document.getElementById('data-region').style.opacity = "100%";
+	document.getElementById('caract-region').style.opacity = "100%";
+	
 
   });
 
@@ -20,6 +23,8 @@ elements.forEach(function(element) {
     this.style.strokeWidth = '';
     this.style.fill = '';
 	document.getElementById('data-region').style.width = "0";
+	document.getElementById('data-region').style.opacity = "0%";
+	document.getElementById('caract-region').style.opacity = "0%";
 	while (dep.firstChild) {
 		dep.removeChild(dep.firstChild);
 	  }

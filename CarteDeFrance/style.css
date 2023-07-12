@@ -65,23 +65,24 @@ body #data-region {
   background-color: rgba(0, 0, 0, 0.5);
 }
 body #data-region div {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
+  display: block;
 }
 body #data-region div img {
   width: 300px;
   height: 200px;
+  background-position: center;
+  background-size: contain;
 }
 body #data-region ul {
   text-transform: uppercase;
   font-size: large;
-  padding-right: 30%;
+  padding-right: 10%;
   list-style: none;
   color: #000000;
 }
 body #data-region ul li {
   margin: 4px 0;
+  white-space: nowrap;
 }
 body #data-region ul li span {
   font-weight: bolder;

@@ -138,29 +138,31 @@ function turnCard(cardClick){
         cardIndice.push(cardClick);
         cardcount++;
         if(cardcount === 2){
-            setTimeout(turnCardAction(),2000);
+            setTimeout(turnCardAction, 500);
             essai++;
             document.getElementById('compteur').innerHTML = "Nombre de coups: "+essai;
         }
 }
 
-function turnCardAction(){
-    if(cardTourner[0] === cardTourner[1]){
-        for(var indice in cardIndice){
+function turnCardAction() {
+    if (cardTourner[0] === cardTourner[1]) {
+        for (var indice in cardIndice) {
             document.getElementById(cardIndice[indice]).style.opacity = "20%";
         }
         cardTourner = [];
         cardIndice = [];
         cardcount = 0;
-    }
-    else{
-        for(var indice in cardIndice){
-            document.getElementById(cardIndice[indice]).style.backgroundImage = "url('svg/question.svg')";
-            document.getElementById("click"+cardIndice[indice]).setAttribute("onclick","turnCard('"+cardIndice[indice]+"')");
-        }
-        cardTourner = [];
-        cardIndice = [];
-        cardcount = 0;
+    } else {
+        setTimeout(function() {
+            for (var indice in cardIndice) {
+                document.getElementById(cardIndice[indice]).style.backgroundImage = "url('svg/question.svg')";
+                document.getElementById("click" + cardIndice[indice]).setAttribute("onclick", "turnCard('" + cardIndice[indice] + "')");
+            }
+            cardTourner = [];
+            cardIndice = [];
+            cardcount = 0;
+        }, 500); // Ajoutez un délai de 1000 millisecondes (1 seconde)
     }
 }
+
 
