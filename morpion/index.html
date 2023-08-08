@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Morpion</title>
+</head>
+<body>
+    <h1>MORPION</h1>
+    <p class="regles">Le Morpion est un jeu pour deux joueurs sur une grille 3x3. Les joueurs placent leurs symboles (généralement "X" ou "O") tour à tour dans des cases vides. Le gagnant est le premier à aligner trois de ses symboles horizontalement, verticalement ou diagonalement. Si la grille est remplie sans alignement, c'est un match nul.</p>
+    <p id="tour" class="tour">...</p>
+    <div class="gameBoard">
+        <div class="row">
+            <div class="col">
+                <div id="1" name="C" class="caseBoard"></div>
+                <div id="4" name="C" class="caseBoard V"></div>
+                <div id="7" name="C" class="caseBoard V"></div>
+            </div>
+            <div class="col">
+                <div id="2" name="C" class="caseBoard H"></div>
+                <div id="5" name="C" class="caseBoard H V"></div>
+                <div id="8" name="C" class="caseBoard H V"></div>
+            </div>
+            <div class="col">
+                <div id="3" name="C" class="caseBoard H"></div>
+                <div id="6" name="C" class="caseBoard H V"></div>
+                <div id="9" name="C" class="caseBoard H V"></div>
+            </div>
+        </div>  
+    </div>
+    <div class="reset"><input type="button" id="reset" value="Reset" onclick="customReset()"></div>
+<script src="script.js"></script>
+</body>
+</html>

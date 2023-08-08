@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #000000;
+  background: linear-gradient(202deg, #000000 33%, #ffce19 57%, #000000 78%);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  color: white;
+}
+body h1 {
+  margin: 30px 0;
+  letter-spacing: 8px;
+}
+body .regles {
+  width: 80vw;
+  margin: 0 15px 45px 15px;
+  text-align: center;
+}
+body .tour {
+  margin-bottom: 15px;
+}
+body .gameBoard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 50px 0;
+  border: outset 5px black;
+}
+body .gameBoard .row {
+  display: flex;
+  flex-direction: row;
+}
+body .gameBoard .row .col {
+  flex-direction: column;
+}
+body .gameBoard .row .col .caseBoard {
+  width: 120px;
+  height: 120px;
+  background-color: white;
+  background-image: none;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+body .gameBoard .row .col .H {
+  border-left: solid 1px black;
+}
+body .gameBoard .row .col .V {
+  border-top: solid 1px black;
+}
+body .reset {
+  width: 250px;
+  height: 80px;
+  border-radius: 20px;
+}
+body .reset input {
+  background: #000000;
+  background: linear-gradient(202deg, #000000 0%, #000000 2%, #edbb00 18%, #edbb00 19%, #000000 21%, #000000 74%, #ffcc00 76%, #f4c400 77%, #000000 96%, #000000 100%);
+  color: white;
+  width: 100%;
+  height: 100%;
+  font-size: x-large;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  font-weight: bolder;
+  border-radius: 20px;
+  border: solid 2px white;
+}

@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', function() {
 // Sélectionne tous les éléments SVG de la page
 const elements = document.querySelectorAll('svg:not(svg *) *');
 
@@ -25,9 +26,9 @@ elements.forEach(function(element) {
 	document.getElementById('data-region').style.width = "0";
 	document.getElementById('data-region').style.opacity = "0%";
 	document.getElementById('caract-region').style.opacity = "0%";
-	while (dep.firstChild) {
-		dep.removeChild(dep.firstChild);
-	  }
+	// while (dep.firstChild) {
+	// 	dep.removeChild(dep.firstChild);
+	// }
   });
 });
 
@@ -82,6 +83,11 @@ function depOver(element){
 	let img = document.getElementById('img');
 	console.log(element.getAttribute('data-nom'));
 	document.getElementById('span-region').innerHTML = element.getAttribute('data-nom');
+	// Réinitialiser la liste des départements
+    while (dep.firstChild) {
+        dep.removeChild(dep.firstChild);
+    }
+
 	switch(element.getAttribute('data-nom')){
 		case 'Normandie':
 			img.setAttribute("src","img/Normandie.png");
@@ -633,3 +639,4 @@ function depOver(element){
 			break;
 	}
 }
+});
